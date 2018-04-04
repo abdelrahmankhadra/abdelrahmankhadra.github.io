@@ -14,6 +14,104 @@ body {
     }
 }
 
+/* Button */
+
+input[type="submit"], input[type="reset"], input[type="button"], button, .button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 300;
+  height: 2.75em;
+  line-height: 2.75em;
+  min-width: 9.25em;
+  padding: 0 1.5em;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+input[type="submit"].icon, input[type="reset"].icon, input[type="button"].icon, button.icon, .button.icon {
+  padding-left: 1.35em;
+}
+
+input[type="submit"].icon:before, input[type="reset"].icon:before, input[type="button"].icon:before, button.icon:before, .button.icon:before {
+  margin-right: 0.5em;
+}
+
+input[type="submit"].fit, input[type="reset"].fit, input[type="button"].fit, button.fit, .button.fit {
+  display: block;
+  margin: 0 0 1em 0;
+  width: 100%;
+}
+
+input[type="submit"].small, input[type="reset"].small, input[type="button"].small, button.small, .button.small {
+  font-size: 0.8em;
+}
+
+input[type="submit"].big, input[type="reset"].big, input[type="button"].big, button.big, .button.big {
+  font-size: 1.35em;
+}
+
+input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"].disabled, input[type="reset"]:disabled, input[type="button"].disabled, input[type="button"]:disabled, button.disabled, button:disabled, .button.disabled, .button:disabled {
+  -moz-pointer-events: none;
+  -webkit-pointer-events: none;
+  -ms-pointer-events: none;
+  pointer-events: none;
+  opacity: 0.25;
+}
+
+@media screen and (max-width: 736px) {
+  input[type="submit"], input[type="reset"], input[type="button"], button, .button {
+    min-width: 0;
+  }
+}
+
+input[type="submit"], input[type="reset"], input[type="button"], button, .button {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+  color: #ffffff !important;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, button:hover, .button:hover {
+  background-color: rgba(255, 255, 255, 0.075);
+}
+
+input[type="submit"]:active, input[type="reset"]:active, input[type="button"]:active, button:active, .button:active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+input[type="submit"].icon:before, input[type="reset"].icon:before, input[type="button"].icon:before, button.icon:before, .button.icon:before {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+input[type="submit"].special, input[type="reset"].special, input[type="button"].special, button.special, .button.special {
+  background-color: #495057;
+  color: #ffffff !important;
+  box-shadow: none;
+}
+
+input[type="submit"].special:hover, input[type="reset"].special:hover, input[type="button"].special:hover, button.special:hover, .button.special:hover {
+  background-color: #2196f3;
+}
+
+input[type="submit"].special:active, input[type="reset"].special:active, input[type="button"].special:active, button.special:active, .button.special:active {
+  background-color: #7ec3ee;
+}
+
+input[type="submit"].special.icon:before, input[type="reset"].special.icon:before, input[type="button"].special.icon:before, button.special.icon:before, .button.special.icon:before {
+  color: #ffffff !important;
+}
+
+
 h1,
 h2,
 h3,
@@ -224,7 +322,7 @@ a:active {
 
 /*==================================================
                     EXPERIENCE
-====================================================*/  
+====================================================*/
   #experience {
     background: #f5f5f5;
   }
@@ -241,7 +339,7 @@ a:active {
 
 #portfolio{
     padding:100px 0;
-} 
+}
 
 .port-head-cont{
     margin:20px auto 40px auto;
@@ -336,7 +434,7 @@ a:active {
     padding: 10px 0 100px 0;
     border: 0;
     border-radius: 0;
-} 
+}
 
 .portfolio-modal .modal-dialog .modal-content img {
     margin-bottom: 30px;
@@ -345,7 +443,7 @@ a:active {
 .portfolio-modal .modal-dialog .modal-content .item-details {
     margin: 30px 0;
 }
- 
+
 .portfolio-modal .close-modal {
     position: absolute;
     top: 25px;
@@ -394,7 +492,7 @@ a:active {
     .portfolio-modal .close-modal{
         display: none;
     }
-}  
+}
 
 /*====================================================
                       SKILLS
@@ -408,7 +506,7 @@ a:active {
 }
 
 .skill-cover {
-    background-color: rgba(31, 31, 31, 0.68); 
+    background-color: rgba(31, 31, 31, 0.68);
 }
 
 .skill-cover h3{
@@ -447,7 +545,7 @@ a:active {
 /*====================================================
                       AWARD
 ======================================================*/
- 
+
 #awards {
     background: #f0f0f0;
 }
@@ -628,7 +726,7 @@ a:active {
 #award-box .award:nth-child(2n) .award-content:after {
     left: -14%;
 }
- 
+
 @media only screen and (max-width: 767px) {
     #award-box {
         padding-left: 20px;
@@ -684,16 +782,16 @@ a:active {
 #contact .contact-cont2 address a{
   color:#666;
 }
- 
+
 .con-form input {
     border-color: #ccc;
     border-radius: 0;
     color: #717171;
-    margin-top: 30px; 
+    margin-top: 30px;
 }
 
 .con-form textarea {
-    width: 100%; 
+    width: 100%;
     height: 200px;
     margin:30px 0;
     border-color: #ccc;
@@ -703,7 +801,7 @@ a:active {
 
 .contact-side-desc{
     padding-top: 40px;
-} 
+}
 
 .contact-box-desc h3{
   color:#555;
@@ -725,14 +823,14 @@ a:active {
   text-align: center;
   margin-right: 10px;
   border-radius: 50%;
-}  
+}
 
 @media(max-width: 767px){
     #contact-p2 .con-form input{
         margin-bottom: 30px;
     }
     .con-form textarea {
-        width: 100%; 
+        width: 100%;
         height: 200px;
         margin:10px 0 30px 0;
         border-color: #ccc;
@@ -752,15 +850,15 @@ a:active {
 @media (max-width: 575px){
     #contact .social-icon-f{
             text-align: center;
-    }    
+    }
 }
 
 @media (max-width: 420px){
     #contact .social-icon-f{
             text-align: center;
-    }    
+    }
 }
- 
+
 .map-responsive{
     overflow:hidden;
     padding-bottom:50%;
